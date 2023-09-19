@@ -32,17 +32,38 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid var(--Light-slate-blue);
+  text-align: center;
   border-radius: 0px 0px 30px 30px;
+  background: linear-gradient(
+    0deg,
+    var(--Light-royal-blue) 10%,
+    var(--Light-slate-blue)
+  );
+}
+
+.your__score,
+.evaluation {
+  color: white;
+}
+.your__container,
+.total__score,
+.comment {
+  color: var(--Light-lavender);
 }
 .circle {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
+  width: 120px;
+  height: 120px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 100%;
+  background: linear-gradient(
+    0deg,
+    var(--Persian-blue),
+    var(--Violet-blue) 90%
+  );
 }
 .your__score,
 .total__score {
@@ -50,12 +71,58 @@ body {
 }
 .your__score {
   font-weight: 800;
-  font-size: 2.8rem;
+  font-size: 3rem;
+}
+.total__score,
+.comment {
+  font-size: 16px;
+}
+.evaluation {
+  font-size: 24px;
+  margin: 10px 0 0 0;
 }
 strong {
   margin-left: 100px;
 }
 .item {
+  margin-top: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  border-radius: 20px;
+}
+.img {
+  margin: 0 10px 0 15px;
+}
+.reaction__box {
+  background-color: #fff7f4;
+}
+.memory__box {
+  background-color: #fffbf2;
+}
+.verbal__box {
+  background-color: #f3fafa;
+}
+.visual__box {
+  background-color: #f2f3fc;
+}
+.number {
+  color: var(--Dark-gray-blue);
+  margin-right: 15px;
+}
+.word__box {
+  margin: 15px 0 15px 0;
+}
+.red {
+  color: var(--Light-red);
+}
+.yellow {
+  color: var(--Orangey-yellow);
+}
+.green {
+  color: var(--Green-teal);
+}
+.purple {
+  color: var(--Cobalt-blue);
 }
